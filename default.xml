@@ -20,7 +20,7 @@
            fetch="https://github.com/TeamWin" />
 
   <remote  name="PitchBlackTWRP"
-           fetch="https://github.com/PitchBlack-Recovery" />
+           fetch="https://github.com/PitchBlackRecoveryProject" />
 
   <default revision="refs/tags/android-6.0.1_r81"
            remote="aosp"
