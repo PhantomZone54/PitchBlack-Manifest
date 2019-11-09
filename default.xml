@@ -34,12 +34,10 @@
   <project path="android" name="android" remote="omnirom" revision="android-6.0" />
   <project path="bionic" name="android_bionic" remote="omnirom" revision="android-6.0" groups="pdk" />
   <!-- TWRP lives in Omnirom (not AOSP!) -->
-  <project path="bootable/recovery" name="android_bootable_recovery" revision="PBRP" remote="PitchBlackTWRP"/>
+  <project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackTWRP"/>
   <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
     <linkfile src="pb_build.sh" dest="pb_build.sh" />
   </project>
-  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
-  <project path="device/qcom/common" name="android_device_qcom_common" remote="TeamWin" revision="android-6.0" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
@@ -70,6 +68,7 @@
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lz4" name="android_external_lz4" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lzma" name="android_external_lzma" remote="omnirom" revision="android-6.0" groups="pdk" />
+  <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackTWRP" revision="master" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="omnirom" revision="android-6.0"/>
   <project path="external/pcre" name="platform/external/pcre" groups="pdk" />
@@ -81,7 +80,6 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="frameworks/native" name="android_frameworks_native" remote="omnirom" revision="android-6.0" groups="pdk" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="omnirom" revision="android-6.0" groups="pdk" />
-  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="omnirom" revision="android-6.0" groups="qcom" />
   <project path="libcore" name="android_libcore" remote="omnirom" revision="android-6.0" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="prebuilts/clang/linux-x86/host/3.6" name="platform/prebuilts/clang/linux-x86/host/3.6" groups="pdk,linux" />
@@ -97,5 +95,6 @@
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/netd" name="android_system_netd" groups="pdk" remote="omnirom" revision="android-6.0" />
   <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-6.0" />
-
+  <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb" />
+  
 </manifest>
