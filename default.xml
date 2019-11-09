@@ -95,6 +95,5 @@
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/netd" name="android_system_netd" groups="pdk" remote="omnirom" revision="android-6.0" />
   <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-6.0" />
-  <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb" />
   
 </manifest>
