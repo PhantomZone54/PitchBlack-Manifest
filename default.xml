@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="xda"
-           fetch=".." />
-
   <remote  name="github"
            fetch="https://github.com/" />
 
@@ -25,7 +22,7 @@
   <default revision="refs/tags/android-6.0.1_r81"
            remote="aosp"
            sync-c="true"
-           sync-j="12" />
+           sync-j="16" />
 
   <project path="build" name="android_build" remote="PitchBlackTWRP" revision="android-6.0" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -42,7 +39,7 @@
   <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <!-- Use OmniROM busybox -->
-  <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-8.1" />
+  <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-6.0" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/clang" name="android_external_clang" remote="omnirom" revision="android-6.0" groups="pdk" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
