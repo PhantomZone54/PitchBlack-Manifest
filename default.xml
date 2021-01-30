@@ -32,9 +32,11 @@
   <project path="bionic" name="android_bionic" remote="omnirom" revision="android-6.0" groups="pdk" />
   <!-- TWRP lives in Omnirom (not AOSP!) -->
   <project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackTWRP"/>
-  <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
-    <linkfile src="pb_build.sh" dest="pb_build.sh" />
-  </project>
+  <project path="external/zip" name="android_external_zip" revision="cm-13.0" remote="PitchBlackTWRP" />
+  <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb" />
+	<project path="vendor/utils" name="vendor_utils" remote="PitchBlackTWRP" revision="pb">
+		<linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
+	</project>
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
@@ -91,6 +93,5 @@
   <project path="system/extras" name="android_system_extras" remote="omnirom" revision="android-6.0" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/netd" name="android_system_netd" groups="pdk" remote="omnirom" revision="android-6.0" />
-  <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-6.0" />
   
 </manifest>
